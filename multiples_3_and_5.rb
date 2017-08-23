@@ -6,15 +6,11 @@
 
 
 def sum_multiples_of_3_and_5(num)
-
   arr = Array(0..(num-1))
-
   keep = arr.select do  |n|
     n % 3 == 0 || n % 5 == 0
   end
-
-puts keep.reduce(:+)
-
+  puts keep.reduce(:+)
 end
 
 
