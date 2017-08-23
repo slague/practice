@@ -2,8 +2,6 @@
 # num is the place in the sequence... in other words what is the 8th fib number, or the 2nd or, 100th, etc.
 
 
-
-
 # SIMPLEST, BREAKS AROUND 14 or 15...
 # def fib(num)
 #   if num <= 1
