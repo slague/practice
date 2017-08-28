@@ -15,7 +15,8 @@ def quicksort(array)
   if array.length < 2
     array
   else
-    pivot = array[0]
+    piv = (array.length / 2)
+    pivot = array[piv]
     less = array.select { |num| num.to_i < pivot }
     greater = array.select {|num| num.to_i > pivot }
 
@@ -23,8 +24,9 @@ def quicksort(array)
     sorted_array << quicksort(less)
     sorted_array << pivot
     sorted_array << quicksort(greater)
-    p sorted_array.flatten!
+     sorted_array.flatten!
   end
+  # p sorted_array
 end
 
-quicksort([3, 4, 6, 2, 9, 1, 8, 5, 7])
+p quicksort([3, 4, 6, 2, 9, 1, 8, 5, 7])
