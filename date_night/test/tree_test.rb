@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 require './lib/tree'
-# require './lib/node'
+require './lib/node'
 require 'minitest/pride'
 
 
@@ -8,7 +8,7 @@ require 'minitest/pride'
 class BinarySearchTreeTest < Minitest::Test
 
   def test_insert
-    
+
 
   end
 
