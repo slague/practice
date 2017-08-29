@@ -1,5 +1,6 @@
 require_relative 'node'
 
+#when to use @ again...
 class BinarySearchTree
 
   attr_accessor :root_node, :values, :total_nodes
@@ -20,20 +21,42 @@ class BinarySearchTree
     end
   end
 
-  def include?(value)
-    @entered_nodes.values.include?(value)
+  # def include?(value)
+  #   @entered_nodes.values.include?(value)
+  # end
+  def include?(value, node=@root_node)
+    if node.value == value
+      return true
+    elsif value < node.value
+        if node.left.nil?
+          return false
+        else
+          include?(value, node.left)
+        end
+    else
+      if node.right.nil?
+        return false
+      else
+        include?(value, node.right)
+      end
+    end
   end
 
-  def depth_of(value)
+  def depth_of(value, node=@root_node)
+
+
+    # if node.value == value
+    #   return 0
+    # elsif value < node.value
+    #   height +=1
+    #   return height
+    # end
+
 
   end
 
-  def max
-    max = {}
-    max_val = @entered_nodes.values.max
-    max_title = @entered_nodes.key(max_val)
-    max[max_title] = max_val
-    max
+  def max(node=@root_node)
+
   end
 
   def min

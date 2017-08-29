@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 # require './lib/tree'
-require_relative './lib/node'
+require_relative '../lib/node'
 require 'minitest/pride'
 
 
