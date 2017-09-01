@@ -5,6 +5,19 @@
 #
 # The parameter of the function findNb (find_nb, find-nb, findNb) will be an integer m and you have to return the integer n such as n^3 + (n-1)^3 + ... + 1^3 = m if such a n exists or -1 if there is no such n.
 
+def pile_of_cubes(m)
+  n = 1
+  n^3
+  n^3 + (n+1)^3
+  n^3 + (n+1)^3 + (n+2)^3
+
+
+  # check m against 1^3
+  # check m against 1^3 + 2^3
+  # check m against 1^3 + 2^3 + 3^3...
+
+
+end
 
 # say n is 3
 # the vol of bottom cube is 27
@@ -21,11 +34,3 @@
 #   how many cubes added up are in the total...
 #   start adding them up 1 + 8 = 9
 #   then add the next 1 + 8 + 27
-
-
-  def cube_root(x)
-    Math.exp(Math.log(x.to_f)/3.to_f).to_i
-  end
-
-  p cube_root(8)
-  p cube_root(27)

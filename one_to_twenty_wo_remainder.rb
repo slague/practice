@@ -4,24 +4,21 @@
 
 
 def one_to_twenty_wo_remainder
+  array = Array(1..20).reverse
+  index = 2
+  smallest_div = (array[0] * array[1])
 
-  div_array = Array(1..20)
-  Inf = 1.0/0.0
-  test_smallest = 2520
-
-
-
-
-# go thru div array and divide each num by the test, if every single one is divisible this is it!
-# if, not add one
-#     smallest % div_array.each do |num| == 0
-
+  loop do
+    # require "pry"; binding.pry
+    if array.all? { |num|  smallest_div % num == 0 }
+      return smallest_div
     else
-      a +=1
+      smallest_div *= array[index]
+      index += 1
     end
-
   end
-
 end
+
+
 
 p one_to_twenty_wo_remainder
