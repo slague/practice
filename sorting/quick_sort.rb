@@ -10,6 +10,8 @@
 # find the elements smaller than the pivot and place them to the left, larger to the right and then
 # call quicksort on the sub arrays that are to the the left and right
 
+# AVERAGE O(n log n) comparisons to sort n items
+# WORST CASE O(n2) comparisons
 
 def quicksort(array)
   if array.length < 2
