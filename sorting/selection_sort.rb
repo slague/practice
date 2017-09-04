@@ -1,3 +1,5 @@
+# It has O(n2) time complexity, making it inefficient on large lists, and generally performs worse than the similar insertion sort.
+
 def find_smallest(array)
   smallest = array[0]
   smallest_index = 0
@@ -11,8 +13,6 @@ def find_smallest(array)
   end
   smallest
 end
-
-# p find_smallest([5, 3, 4, 2, 8, 9, 12, 3])
 
 
 def selection_sort(array)

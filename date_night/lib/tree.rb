@@ -21,9 +21,7 @@ class BinarySearchTree
     end
   end
 
-  # def include?(value)
-  #   @entered_nodes.values.include?(value)
-  # end
+
   def include?(value, node=@root_node)
     if node.value == value
       return true
@@ -44,15 +42,12 @@ class BinarySearchTree
 
   def depth_of(value, node=@root_node)
 
-
     # if node.value == value
     #   return 0
     # elsif value < node.value
     #   height +=1
     #   return height
     # end
-
-
   end
 
   def max(node=@root_node)
@@ -60,11 +55,7 @@ class BinarySearchTree
   end
 
   def min
-    min = {}
-    min_val = @entered_nodes.values.min
-    min_title = @entered_nodes.key(min_val)
-    min[min_title] = min_val
-    min
+
   end
 
 end

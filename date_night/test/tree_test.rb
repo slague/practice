@@ -1,8 +1,6 @@
 require 'minitest/autorun'
-require './lib/tree'
-require './lib/node'
 require 'minitest/pride'
-
+require_relative '../lib/tree'
 
 
 class BinarySearchTreeTest < Minitest::Test
