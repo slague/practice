@@ -17,7 +17,7 @@ def bubble_sort(collection)
     swap = false
 
     while current <= collection.length
-require "pry"; binding.pry
+# require "pry"; binding.pry
       if collection[previous] > collection[current]
         previous_bubble = collection[previous]
         current_bubble = collection[current]
