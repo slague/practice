@@ -9,7 +9,6 @@
 
 
 def bubble_sort(collection)
-  require "pry"; binding.pry
   swap = true
 
   until swap == false
@@ -17,8 +16,8 @@ def bubble_sort(collection)
     current = previous + 1
     swap = false
 
-    while current <= collection.length #while current is less than or equal the length of the array keep doing this
-
+    while current <= collection.length
+require "pry"; binding.pry
       if collection[previous] > collection[current]
         previous_bubble = collection[previous]
         current_bubble = collection[current]
