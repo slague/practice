@@ -1,6 +1,7 @@
 # bubble sort or skinny sort
 # Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion sort.
 # It can be practical if the input is usually in sorted order but may occasionally have some out-of-order elements nearly in position.
+
 # Bubble sort has worst-case and average complexity both О(n2), not a practical sorting algorithm when n is large.
 #
 # The only significant advantage that bubble sort has over most other implementations, even quicksort, but not insertion sort, is that the ability to detect that the list is sorted efficiently is built into the algorithm.
